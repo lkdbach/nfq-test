@@ -1,0 +1,31 @@
+@import "./src/assets/styles/variables";
+.search-input {
+  box-sizing: border-box;
+  margin-top: 16px;
+  font-size: 24px;
+  border: 1px solid $grey-color;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.add-collection {
+  display: block;
+  & > svg {
+    float: left;
+  }
+  .btn-label {
+    line-height: 24px;
+    display: inline-block;
+  }
+}
+
+.popup-content {
+  .popup-item {
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

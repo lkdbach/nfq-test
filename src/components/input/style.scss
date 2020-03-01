@@ -1,0 +1,46 @@
+@import "./src/assets/styles/variables";
+
+.input-block {
+  background-color: #FFFFFF;
+  border: 1px solid $grey-color;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .input-label {
+    font-size: 12px;
+    color: $grey-dark-color;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 4px;
+
+    .input-required {
+      color: red;
+    }
+  }
+
+  .input-field {
+    border: none;
+    outline: none;
+    font-size: 14px;
+
+    &[disabled] {
+      background-color: transparent;
+      color: $grey-color;
+    }
+  }
+
+  textarea.input-field {
+    padding: 0;
+    background-color: transparent;
+    width: 100%;
+    resize: vertical;
+  }
+
+  select.input-field {
+    margin: 0 -3px;
+    color: $black;
+    text-transform: capitalize;
+  }
+}

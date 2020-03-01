@@ -1,0 +1,36 @@
+.row-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-sort {
+  display: flex;
+
+  .filter-sort-item {
+    margin-right: 16px;
+    width: 200px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.collection-page-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Helvetica-Bold;
+}
+
+.action-group {
+  display: flex;
+
+  .action-item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

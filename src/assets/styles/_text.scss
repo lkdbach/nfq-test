@@ -1,0 +1,32 @@
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.58px;
+  line-height: 29px;
+  margin: 8px 0;
+  word-break: break-all;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.09px;
+  line-height: 21px;
+  margin: 8px 0;
+}
+
+.text-helper {
+  color: $grey-dark-color;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.09px;
+  line-height: 21px;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,58 @@
+@import "src/assets/styles/variables";
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+
+  .pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+
+    .page-item {
+      .page-link {
+        border-radius: 4px !important;
+        transition: all .3s;
+        margin: 0 3px;
+        min-width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: $grey-dark-color;
+        font-size: 12px;
+        text-transform: uppercase;
+        background: $white;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+
+        &.disabled {
+          cursor: default;
+
+          &:hover,
+          &:focus {
+            background: $white;
+            color: $grey-dark-color;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $grey-color;
+          color: $white;
+        }
+      }
+
+      &.active .page-link {
+        color: $grey-color;
+
+        &,
+        &:focus,
+        &:hover {
+          background-color: $primary-color;
+          border-color: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
