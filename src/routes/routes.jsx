@@ -6,9 +6,9 @@ import { SEARCH, COLLECTION, VIDEO } from './route.constants'
 const Routes = () => {
   return (
     <Switch>
-      <Route component={CollectionPage} exact path={COLLECTION} />
       <Route component={SearchPage} path={SEARCH} />
       <Route component={VideoPage} path={VIDEO} />
+      <Route component={CollectionPage} exact path={COLLECTION} />
     </Switch>
   )
 }
